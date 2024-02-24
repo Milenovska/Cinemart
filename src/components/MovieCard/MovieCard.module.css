@@ -1,7 +1,29 @@
 .movieCard {
-  height: 480px;
-  width: 350px;
+  height: 710px;
+  width: clamp(300px, 25%, 600px);
   border-radius: 8px;
-  background-color: rgb(42, 212, 155);
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: #22374f;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.poster {
+  height: 280px;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+
+.movieTitle {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.buttonPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
 }

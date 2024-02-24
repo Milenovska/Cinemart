@@ -1,0 +1,14 @@
+.buttonToDetail {
+  height: 4rem;
+  width: 8.5rem;
+  border-radius: 10px;
+  background-color: #ececec;
+  border-color: #ececec;
+  color: black;
+}
+
+.p {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+}
