@@ -13,5 +13,18 @@ export type Movie = {
   video: boolean;
   vote_average: number;
   vote_count: number;
-  data: string;
+  apiKey: string;
+  genres: Genre[];
 };
+
+type Genre = {
+  id: number;
+  name: string;
+};
+
+export enum MOVIE_TYPES {
+  NOW_PLAYING = "now_playing",
+  TOP_RATED = "top_rated",
+  POPULAR = "popular",
+  UPCOMING = "upcoming",
+}

@@ -1,12 +1,12 @@
-import MovieList from "../../hooks/MovieList";
-import styles from "./Upcoming.module.css";
+import { CardList } from "../../components";
+import { MOVIE_TYPES } from "../../types/common";
 
-const Upcoming = () => {
+const UpComing: React.FC = () => {
   return (
-    <div className={styles.upcoming}>
-      <MovieList />
+    <div>
+      <CardList type={MOVIE_TYPES.UPCOMING} />
     </div>
   );
 };
 
-export default Upcoming;
+export default UpComing;

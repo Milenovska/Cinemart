@@ -1,12 +1,12 @@
 import { CardList } from "../../components";
 import { MOVIE_TYPES } from "../../types/common";
 
-const Popular: React.FC = () => {
+const NowPlaying: React.FC = () => {
   return (
     <div>
-      <CardList type={MOVIE_TYPES.POPULAR} />
+      <CardList type={MOVIE_TYPES.NOW_PLAYING} />
     </div>
   );
 };
 
-export default Popular;
+export default NowPlaying;

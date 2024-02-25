@@ -2,9 +2,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 2rem;
 }
 
-.p {
-  font-size: large;
+.links {
+  display: flex;
+  gap: 5rem;
+}
+
+.links > p {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.link {
   text-decoration: none;
+  color: white;
+}
+
+.visitedLink {
+  font-weight: bolder;
+  color: rgb(242, 243, 207);
 }

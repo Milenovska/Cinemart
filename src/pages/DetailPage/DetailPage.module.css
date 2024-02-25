@@ -1,4 +1,11 @@
-.p {
-  font-size: large;
-  font-weight: 400;
+.tite {
+  padding-left: 35%;
+  justify-content: right;
+  align-items: center;
+}
+
+.poster {
+  width: clamp(500px, 25%, 800px);
+  padding-left: 15%;
+  margin-top: 2%;
 }

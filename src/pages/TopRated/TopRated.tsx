@@ -1,10 +1,10 @@
-import MovieList from "../../hooks/MovieList";
-import styles from "./TopRated.module.css";
+import { CardList } from "../../components";
+import { MOVIE_TYPES } from "../../types/common";
 
-const TopRated = () => {
+const TopRated: React.FC = () => {
   return (
-    <div className={styles.topRated}>
-      <MovieList />
+    <div>
+      <CardList type={MOVIE_TYPES.TOP_RATED} />
     </div>
   );
 };
