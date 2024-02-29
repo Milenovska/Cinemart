@@ -2,9 +2,33 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 6rem;
+  width: 100%;
 }
 
-.p {
-  font-size: large;
+.linksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.menuLinkVisited {
+  color: rgba(255, 221, 0);
+}
+
+.menuLinkNotVisited {
+  color: white;
+}
+
+.menuLink {
+  font-size: 30px;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.visitedLink {
+  font-weight: bolder;
+  color: rgb(242, 243, 207);
 }

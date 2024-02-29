@@ -1,11 +1,11 @@
-import MovieList from "../../hooks/MovieList";
-import styles from "./TopRated.module.css";
+import MovieLayout from "../../components/MovieLayout/MovieLayout";
+import { MovieList } from "../../components";
 
-const TopRated = () => {
+const TopRated: React.FC = () => {
   return (
-    <div className={styles.topRated}>
-      <MovieList />
-    </div>
+    <MovieLayout>
+      <MovieList type="top_rated" />
+    </MovieLayout>
   );
 };
 

@@ -1,0 +1,15 @@
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingText {
+  color: white;
+  font-size: 50px;
+}
+
+.loader {
+  padding-top: 20px;
+}

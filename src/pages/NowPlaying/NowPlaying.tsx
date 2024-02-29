@@ -1,12 +1,12 @@
 import { MovieList } from "../../components";
 import MovieLayout from "../../components/MovieLayout/MovieLayout";
 
-const Popular: React.FC = () => {
+const NowPlaying: React.FC = () => {
   return (
     <MovieLayout>
-      <MovieList type="popular" />
+      <MovieList type="now_playing" />
     </MovieLayout>
   );
 };
 
-export default Popular;
+export default NowPlaying;

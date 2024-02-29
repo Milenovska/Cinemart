@@ -1,4 +1,34 @@
-.p {
-  font-size: large;
-  font-weight: 400;
+.detailPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.movieDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.poster {
+  width: clamp(600px, 25%, 1200px);
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieName {
+  color: white;
+  font-size: 55px;
+}
+
+.overviewInformations {
+  max-width: 800px;
+  color: white;
+  font-size: 30px;
 }
