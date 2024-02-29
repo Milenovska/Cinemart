@@ -1,52 +1,62 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Menu.module.css";
-import { SearchField } from "..";
+import { AppName, SearchField } from "..";
 
-const Menu = () => {
+const Menu: React.FC = () => {
   return (
     <div className={styles.menu}>
-      <div className={styles.links}>
-        <p>
+      <div className={styles.linksContainer}>
+        <p className={styles.menuText}>
           <NavLink
-            className={({ isActive }) =>
-              `${isActive && styles.visitedLink} ${styles.link}`
-            }
             to="/"
+            className={({ isActive }) =>
+              `${styles.menuLink} ${
+                isActive ? styles.menuLinkVisited : styles.menuLinkNotVisited
+              }`
+            }
           >
             Now playing
           </NavLink>
         </p>
-        <p>
+        <p className={styles.menuText}>
           <NavLink
-            className={({ isActive }) =>
-              `${isActive && styles.visitedLink} ${styles.link}`
-            }
             to="/topRated"
+            className={({ isActive }) =>
+              `${styles.menuLink} ${
+                isActive ? styles.menuLinkVisited : styles.menuLinkNotVisited
+              }`
+            }
           >
             Top Rated
           </NavLink>
         </p>
-        <p>
+        <p className={styles.menuText}>
           <NavLink
-            className={({ isActive }) =>
-              `${isActive && styles.visitedLink} ${styles.link}`
-            }
             to="/popular"
+            className={({ isActive }) =>
+              `${styles.menuLink} ${
+                isActive ? styles.menuLinkVisited : styles.menuLinkNotVisited
+              }`
+            }
           >
             Popular
           </NavLink>
         </p>
-        <p>
+        <p className={styles.menuText}>
           <NavLink
-            className={({ isActive }) =>
-              `${isActive && styles.visitedLink} ${styles.link}`
-            }
             to="/upcoming"
+            className={({ isActive }) =>
+              `${styles.menuLink} ${
+                isActive ? styles.menuLinkVisited : styles.menuLinkNotVisited
+              }`
+            }
           >
             Upcoming
           </NavLink>
         </p>
       </div>
+
+      <AppName />
       <SearchField />
     </div>
   );

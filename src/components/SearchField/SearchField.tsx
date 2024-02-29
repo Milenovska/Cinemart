@@ -1,37 +1,28 @@
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./SearchField.module.css";
-import { Movie } from "../../types/common";
-import { DetailPage } from "../../pages";
+import { useState } from "react";
 
 const SearchField: React.FC = () => {
-  const [movies, setMovies] = useState<Movie[]>([]);
-  const [searchMovie, setSearchMovie] = useState<string>("");
+  const navigate = useNavigate();
 
-  // Fetch logic here
-  useEffect(() => {
-    try {
-      setMovies(movies);
-    } catch (error) {
-      console.log("error");
-    }
-  });
+  const [searchTerm, setSearchTerm] = useState<string | null>(null);
 
-  const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(searchMovie.toLowerCase())
-  );
+  const handleSearch = (value: string | null) => {
+    setSearchTerm(value);
+  };
 
   return (
-    <div className={styles.seachFieldContainer}>
+    <div>
       <input
-        onChange={(e) => setSearchMovie(e.target.value)}
         className={styles.searchField}
         placeholder="Find movie"
+        onChange={(e) => {
+          handleSearch(e.target.value);
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") navigate(`/search/${searchTerm}`);
+        }}
       />
-      <div>
-        {filteredMovies.map((movie) => (
-          <DetailPage key={movie.id} />
-        ))}
-      </div>
     </div>
   );
 };

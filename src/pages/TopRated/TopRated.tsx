@@ -1,11 +1,11 @@
-import { CardList } from "../../components";
-import { MOVIE_TYPES } from "../../types/common";
+import MovieLayout from "../../components/MovieLayout/MovieLayout";
+import { MovieList } from "../../components";
 
 const TopRated: React.FC = () => {
   return (
-    <div>
-      <CardList type={MOVIE_TYPES.TOP_RATED} />
-    </div>
+    <MovieLayout>
+      <MovieList type="top_rated" />
+    </MovieLayout>
   );
 };
 

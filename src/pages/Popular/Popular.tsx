@@ -1,11 +1,11 @@
-import { CardList } from "../../components";
-import { MOVIE_TYPES } from "../../types/common";
+import { MovieList } from "../../components";
+import MovieLayout from "../../components/MovieLayout/MovieLayout";
 
 const Popular: React.FC = () => {
   return (
-    <div>
-      <CardList type={MOVIE_TYPES.POPULAR} />
-    </div>
+    <MovieLayout>
+      <MovieList type="popular" />
+    </MovieLayout>
   );
 };
 

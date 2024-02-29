@@ -1,0 +1,30 @@
+.searchResultsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchResultsText {
+  color: white;
+  font-size: 40px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noResultsTest {
+  color: white;
+  font-size: 50px;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+}
